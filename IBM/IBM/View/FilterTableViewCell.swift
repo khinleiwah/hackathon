@@ -48,7 +48,7 @@ class FilterTableViewCell: UITableViewCell {
             guard let type = FilterType.init(rawValue: sender.tag) else {
                 return
             }
-            sender.backgroundColor = selectType == type ? UIColor.init(rgb: 0x468DCC) : UIColor.lightGray
+           // sender.backgroundColor = selectType == type ? UIColor.init(rgb: 0x468DCC) : UIColor.lightGray
         }
     }
 }

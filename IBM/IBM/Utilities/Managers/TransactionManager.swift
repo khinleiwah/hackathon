@@ -8,10 +8,9 @@
 
 import UIKit
 
-
-
 class TransactionManager: NSObject {
     
+    static let shared = TransactionManager.init()
     override init() {
         
     }

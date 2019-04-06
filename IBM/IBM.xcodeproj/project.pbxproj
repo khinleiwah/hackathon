@@ -19,7 +19,6 @@
 		23D90B9D225734BF00A399FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90B9C225734BF00A399FD /* Constants.swift */; };
 		23D90BA522573B7A00A399FD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90BA422573B7A00A399FD /* APIManager.swift */; };
 		23D90BA722573BF400A399FD /* ObjectMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90BA622573BF400A399FD /* ObjectMapping.swift */; };
-		23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A1322584E8D00D8307F /* TransferTableViewController.swift */; };
 		23F01A172258669200D8307F /* DisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A152258669200D8307F /* DisplayTableViewCell.swift */; };
 		23F01A182258669200D8307F /* DisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F01A162258669200D8307F /* DisplayTableViewCell.xib */; };
 		23F01A1B22586B9000D8307F /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A1922586B9000D8307F /* HeaderTableViewCell.swift */; };
@@ -29,6 +28,7 @@
 		23F01A26225878F300D8307F /* InputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A24225878F300D8307F /* InputTableViewCell.swift */; };
 		23F01A27225878F300D8307F /* InputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F01A25225878F300D8307F /* InputTableViewCell.xib */; };
 		23F01A2B22587B6100D8307F /* ReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A2A22587B6100D8307F /* ReviewVC.swift */; };
+		23F01A3122588E5A00D8307F /* SelectAccountTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A3022588E5A00D8307F /* SelectAccountTableVC.swift */; };
 		24DB72C8AD818C968E0C1074 /* Pods_IBMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F57BCE5B5D054FB17F781 /* Pods_IBMTests.framework */; };
 		59A8A5F1225887A20032A7DB /* Currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5ED225887A20032A7DB /* Currency.swift */; };
 		59A8A5F2225887A20032A7DB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5EE225887A20032A7DB /* User.swift */; };
@@ -45,7 +45,6 @@
 		6FB52CA522586EA80059BB30 /* FilterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52CA322586EA80059BB30 /* FilterTableViewCell.swift */; };
 		6FB52CA622586EA80059BB30 /* FilterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB52CA422586EA80059BB30 /* FilterTableViewCell.xib */; };
 		6FB52CA8225875D80059BB30 /* SearchResultsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52CA7225875D80059BB30 /* SearchResultsVC.swift */; };
-		6FB52CAA225879BB0059BB30 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52CA9225879BB0059BB30 /* UIColor.swift */; };
 		6FB52CB22258843F0059BB30 /* SearchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52CB12258843F0059BB30 /* SearchHeader.swift */; };
 		6FB52CB62258874E0059BB30 /* SearchHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6FB52CB52258874E0059BB30 /* SearchHeader.xib */; };
 		F4A3A9EDF12EF2D249CA2574 /* Pods_IBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */; };
@@ -88,7 +87,6 @@
 		23D90B9C225734BF00A399FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23D90BA422573B7A00A399FD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		23D90BA622573BF400A399FD /* ObjectMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapping.swift; sourceTree = "<group>"; };
-		23F01A1322584E8D00D8307F /* TransferTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewController.swift; sourceTree = "<group>"; };
 		23F01A152258669200D8307F /* DisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableViewCell.swift; sourceTree = "<group>"; };
 		23F01A162258669200D8307F /* DisplayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayTableViewCell.xib; sourceTree = "<group>"; };
 		23F01A1922586B9000D8307F /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
@@ -98,6 +96,7 @@
 		23F01A24225878F300D8307F /* InputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTableViewCell.swift; sourceTree = "<group>"; };
 		23F01A25225878F300D8307F /* InputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTableViewCell.xib; sourceTree = "<group>"; };
 		23F01A2A22587B6100D8307F /* ReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewVC.swift; sourceTree = "<group>"; };
+		23F01A3022588E5A00D8307F /* SelectAccountTableVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectAccountTableVC.swift; sourceTree = "<group>"; };
 		3CCDE1ABCE406D34B1A03DA4 /* Pods-IBMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.release.xcconfig"; path = "Target Support Files/Pods-IBMTests/Pods-IBMTests.release.xcconfig"; sourceTree = "<group>"; };
 		59A8A5ED225887A20032A7DB /* Currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currency.swift; sourceTree = "<group>"; };
 		59A8A5EE225887A20032A7DB /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -116,7 +115,6 @@
 		6FB52CA322586EA80059BB30 /* FilterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterTableViewCell.swift; sourceTree = "<group>"; };
 		6FB52CA422586EA80059BB30 /* FilterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterTableViewCell.xib; sourceTree = "<group>"; };
 		6FB52CA7225875D80059BB30 /* SearchResultsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsVC.swift; sourceTree = "<group>"; };
-		6FB52CA9225879BB0059BB30 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		6FB52CB12258843F0059BB30 /* SearchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchHeader.swift; sourceTree = "<group>"; };
 		6FB52CB52258874E0059BB30 /* SearchHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchHeader.xib; sourceTree = "<group>"; };
 		91870C1D518C72405BCE81AA /* Pods-IBMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMUITests.release.xcconfig"; path = "Target Support Files/Pods-IBMUITests/Pods-IBMUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -233,10 +231,8 @@
 				23F01A1A22586B9000D8307F /* HeaderTableViewCell.xib */,
 				6FB52CA322586EA80059BB30 /* FilterTableViewCell.swift */,
 				6FB52CA422586EA80059BB30 /* FilterTableViewCell.xib */,
-
 				23F01A24225878F300D8307F /* InputTableViewCell.swift */,
 				23F01A25225878F300D8307F /* InputTableViewCell.xib */,
-
 				6FB52CB12258843F0059BB30 /* SearchHeader.swift */,
 				6FB52CB52258874E0059BB30 /* SearchHeader.xib */,
 			);
@@ -246,16 +242,13 @@
 		23D90B9B2257349E00A399FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				23F01A3022588E5A00D8307F /* SelectAccountTableVC.swift */,
 				6FB52C9D225867240059BB30 /* LoginVC.swift */,
-				23F01A1322584E8D00D8307F /* TransferTableViewController.swift */,
 				6FB52C9B225867030059BB30 /* WelcomeVC.swift */,
 				6FB52CA122586CDB0059BB30 /* HistoryVC.swift */,
-
 				23F01A22225870D400D8307F /* InputVC.swift */,
 				23F01A2A22587B6100D8307F /* ReviewVC.swift */,
-
 				6FB52CA7225875D80059BB30 /* SearchResultsVC.swift */,
-
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -296,7 +289,6 @@
 			isa = PBXGroup;
 			children = (
 				6FB52C9722584A880059BB30 /* UIView.swift */,
-				6FB52CA9225879BB0059BB30 /* UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -559,6 +551,7 @@
 				23D90BA522573B7A00A399FD /* APIManager.swift in Sources */,
 				6FB52CA8225875D80059BB30 /* SearchResultsVC.swift in Sources */,
 				6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */,
+				23F01A3122588E5A00D8307F /* SelectAccountTableVC.swift in Sources */,
 				23D90BA722573BF400A399FD /* ObjectMapping.swift in Sources */,
 				59A8A5F3225887A20032A7DB /* Account.swift in Sources */,
 				59A8A5FA225887CB0032A7DB /* DataSource.swift in Sources */,
@@ -566,8 +559,6 @@
 				59A8A5F9225887CB0032A7DB /* UserManager.swift in Sources */,
 				6FB52C9E225867250059BB30 /* LoginVC.swift in Sources */,
 				23F01A23225870D400D8307F /* InputVC.swift in Sources */,
-				6FB52CAA225879BB0059BB30 /* UIColor.swift in Sources */,
-				23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */,
 				23F01A2B22587B6100D8307F /* ReviewVC.swift in Sources */,
 				6FB52C9822584A880059BB30 /* UIView.swift in Sources */,
 				23F01A212258705000D8307F /* Constant.swift in Sources */,
