@@ -577,6 +577,9 @@
                         <viewLayoutGuide key="safeArea" id="jQR-Jv-6mL"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z5y-G0-p4N"/>
+                    <connections>
+                        <outlet property="tableView" destination="ktV-mb-HKV" id="I7d-hU-RWI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bf6-BD-VnY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
