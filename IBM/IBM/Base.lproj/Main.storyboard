@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -408,10 +408,10 @@
             </objects>
             <point key="canvasLocation" x="1572" y="-49"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Transaction Complete TableVC-->
         <scene sceneID="uPN-tT-ckH">
             <objects>
-                <tableViewController id="92r-FP-HTw" sceneMemberID="viewController">
+                <tableViewController id="92r-FP-HTw" customClass="TransactionCompleteTableVC" customModule="IBM" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EfE-3p-zgr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -524,6 +524,9 @@
                                             <rect key="frame" x="42" y="22" width="287" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="MAKE ANOTHER TRANSFER"/>
+                                            <connections>
+                                                <action selector="makeAnotherTransaction:" destination="92r-FP-HTw" eventType="touchUpInside" id="kwv-jm-xh0"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -539,6 +542,9 @@
                                             <rect key="frame" x="42" y="22" width="287" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="GO TO HOME"/>
+                                            <connections>
+                                                <action selector="gohome:" destination="92r-FP-HTw" eventType="touchUpInside" id="kcB-qe-Pq0"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -569,7 +575,7 @@
             </objects>
             <point key="canvasLocation" x="4982" y="-754"/>
         </scene>
-        <!--HISTORY-->
+        <!--Navigation Controller-->
         <scene sceneID="Hla-b1-Y9r">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" hidesBottomBarWhenPushed="YES" id="AtE-RN-G47" sceneMemberID="viewController">
@@ -587,7 +593,6 @@
             </objects>
             <point key="canvasLocation" x="1572" y="-27"/>
         </scene>
-
         <!--Navigation Controller-->
         <scene sceneID="zCQ-HN-kv5">
             <objects>
@@ -690,4 +695,7 @@
             <point key="canvasLocation" x="3924" y="-754.27286356821594"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="JEj-ix-VV9"/>
+    </inferredMetricsTieBreakers>
 </document>
