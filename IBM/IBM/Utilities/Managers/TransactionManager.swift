@@ -64,4 +64,6 @@ class TransactionManager: NSObject {
             return (true,"Proceed")
        }
     }
+    
+   
 }

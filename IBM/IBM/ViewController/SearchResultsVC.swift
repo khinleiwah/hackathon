@@ -46,11 +46,11 @@ extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
             return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
         }else if indexPath.row == 1 {
             let filterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as! FilterTableViewCell
-            filterTableViewCell.selectType(type: currentType)
-            filterTableViewCell.filterChangedCallBack = { [weak self] type in
-                self?.currentType = type
-                self?.tableView.reloadData()
-            }
+//            filterTableViewCell.selectType(type: currentType)
+//            filterTableViewCell.filterChangedCallBack = { [weak self] type in
+//                self?.currentType = type
+//                self?.tableView.reloadData()
+//            }
             return filterTableViewCell
         }
         return UITableViewCell()
