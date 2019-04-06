@@ -10,10 +10,10 @@ import UIKit
 
 class DataSource: NSObject {
     
-    override init() {
-        
-    }
+    static let shared = DataSource.init()
     
+    var name = ""
+    var pin = ""
 
     func getAccounts() -> [Account] {
       let acc1 = Account(accountNo: "123-132-121", nicName: "Mysaving", accountType: "Saving", ballance: 34522.56, countryId: 1,isIBankRemitanceAvailable: true)

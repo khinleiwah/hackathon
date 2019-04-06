@@ -35,7 +35,9 @@ class TransactionManager: NSObject {
         let desticationAccountCountryId = desticationAccount.countryId;
         
         if (sourceAccountCountryId == desticationAccountCountryId || desticationAccount.isIBankRemitanceAvailable) {
+
             let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: Amount,date:Date(),fee:0, recevingCurency: receivingCurency.currency,transactionRate:receivingCurency.rate);
+
             return transaction;
         }else{
            
@@ -44,7 +46,9 @@ class TransactionManager: NSObject {
             
             let fee = recieveAmount*0.01
             
+
             let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: recieveAmount,date:Date(),fee:fee, recevingCurency: receivingCurency.currency,transactionRate:receivingCurency.rate);
+
             return transaction;
         }
         

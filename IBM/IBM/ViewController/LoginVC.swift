@@ -28,8 +28,8 @@ class LoginVC: UIViewController {
         }
         APIManager.shared.login(name, pin, apiCallSuccess: { [weak self] data in
             guard let strongSelf = self else{return}
-            DataManager.shared.name = strongSelf.name ?? ""
-            DataManager.shared.name = strongSelf.pin ?? ""
+            DataSource.shared.name = strongSelf.name ?? ""
+            DataSource.shared.name = strongSelf.pin ?? ""
             strongSelf.performSegue(withIdentifier: "goMainPage", sender: nil)
         })
     }
