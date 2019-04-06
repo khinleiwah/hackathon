@@ -19,6 +19,7 @@
 		23D90B9D225734BF00A399FD /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90B9C225734BF00A399FD /* Constants.swift */; };
 		23D90BA522573B7A00A399FD /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90BA422573B7A00A399FD /* APIManager.swift */; };
 		23D90BA722573BF400A399FD /* ObjectMapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23D90BA622573BF400A399FD /* ObjectMapping.swift */; };
+		23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A1322584E8D00D8307F /* TransferTableViewController.swift */; };
 		24DB72C8AD818C968E0C1074 /* Pods_IBMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F57BCE5B5D054FB17F781 /* Pods_IBMTests.framework */; };
 		F4A3A9EDF12EF2D249CA2574 /* Pods_IBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		23D90B9C225734BF00A399FD /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		23D90BA422573B7A00A399FD /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		23D90BA622573BF400A399FD /* ObjectMapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectMapping.swift; sourceTree = "<group>"; };
+		23F01A1322584E8D00D8307F /* TransferTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewController.swift; sourceTree = "<group>"; };
 		3CCDE1ABCE406D34B1A03DA4 /* Pods-IBMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.release.xcconfig"; path = "Target Support Files/Pods-IBMTests/Pods-IBMTests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60060B64AD7D8925C49BAF96 /* Pods_IBMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -174,6 +176,7 @@
 		23D90B9B2257349E00A399FD /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				23F01A1322584E8D00D8307F /* TransferTableViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -454,6 +457,7 @@
 				23D90BA522573B7A00A399FD /* APIManager.swift in Sources */,
 				23D90BA722573BF400A399FD /* ObjectMapping.swift in Sources */,
 				23D90B7122572EC600A399FD /* IBM.xcdatamodeld in Sources */,
+				23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */,
 				23D90B9D225734BF00A399FD /* Constants.swift in Sources */,
 				23D90B6B22572EC600A399FD /* ViewController.swift in Sources */,
 				23D90B6922572EC300A399FD /* AppDelegate.swift in Sources */,
