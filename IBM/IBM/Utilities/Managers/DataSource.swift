@@ -26,14 +26,28 @@ class DataSource: NSObject {
     
     func getTrasactionHistory() -> [Transaction] {
         let acounts = getAccounts()
-        let trn1 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 2334.566, receiveAmount: 1223.55, date: Date(), fee: 0.00, recevingCurency: "")
-        let trn2 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 234.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn3 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 5334.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn4 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 4434.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn5 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
+        let trn1 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 2334.566, receiveAmount: 1223.55, date: Date(), fee: 0.00, recevingCurency: "", transactionRate: 123)
+        let trn2 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 234.566, receiveAmount: 1223.55, date: Date(), fee: 1.00, recevingCurency: "", transactionRate: 0.74)
+        let trn3 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 5334.566, receiveAmount: 1223.55, date: Date(), fee: 12.00, recevingCurency: "", transactionRate: 0.74)
+        let trn4 = Transaction(sourceAccount: acounts[1], destinationAccount: acounts[1], amount: 4434.566, receiveAmount: 1223.55, date: Date(), fee: 9.00, recevingCurency: "", transactionRate: 1.04)
+        let trn5 = Transaction(sourceAccount: acounts[4], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 7.00, recevingCurency: "", transactionRate: 1)
        
         return [trn1,trn2,trn4,trn3,trn5]
     }
+    
+    func getTrasactionHistoryForAccount(AccoutNO:String) -> [Transaction] {
+        let acounts = getAccounts()
+        let trn1 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 2334.566, receiveAmount: 1223.55, date: Date(), fee: 0.00, recevingCurency: "", transactionRate: 1)
+        let trn2 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 234.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 0.74)
+        let trn3 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 5334.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 0.7)
+        let trn4 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 4434.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 123)
+        let trn5 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 134)
+        
+        return [trn1,trn2,trn4,trn3,trn5]
+    }
+    
+    
+    
     
     func getCurencyExchangeRate() -> [Currency]{
         
@@ -49,5 +63,8 @@ class DataSource: NSObject {
         
         return [crr1,crr2,crr3,crr4,crr5]
     }
+    
+    
+    
     
 }
