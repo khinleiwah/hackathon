@@ -33,7 +33,8 @@ extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader")
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader") as! SearchHeader
+        header.tilte.text = "Date 06 April 2019"
         return header
     }
     
@@ -42,18 +43,8 @@ extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if indexPath.row == 0 {
-            return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
-        }else if indexPath.row == 1 {
-            let filterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as! FilterTableViewCell
-//            filterTableViewCell.selectType(type: currentType)
-//            filterTableViewCell.filterChangedCallBack = { [weak self] type in
-//                self?.currentType = type
-//                self?.tableView.reloadData()
-//            }
-            return filterTableViewCell
-        }
-        return UITableViewCell()
+        let displayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath) as! DisplayTableViewCell
+        return displayTableViewCell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

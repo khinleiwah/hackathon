@@ -39,7 +39,6 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
             filterTableViewCell.selectType(type: currentType)
             filterTableViewCell.filterChangedCallBack = { [weak self] type in
                 self?.currentType = type
-                self?.tableView.reloadData()
             }
             return filterTableViewCell
         }

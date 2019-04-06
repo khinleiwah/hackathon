@@ -28,11 +28,6 @@ extension SelectVC: UITableViewDelegate, UITableViewDataSource{
             return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
         }else if indexPath.row == 1 {
             let filterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath) as! HeaderTableViewCell
-//            filterTableViewCell.selectType(type: currentType)
-//            filterTableViewCell.filterChangedCallBack = { [weak self] type in
-//                self?.currentType = type
-//                self?.tableView.reloadData()
-//            }
             return filterTableViewCell
         }
         return UITableViewCell()
