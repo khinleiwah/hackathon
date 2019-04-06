@@ -10,9 +10,9 @@ import UIKit
 
 class DisplayTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var dataLabel: UILabel!
-    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var constraintDescriptionLable: NSLayoutConstraint!
     
     override func awakeFromNib() {
@@ -20,14 +20,15 @@ class DisplayTableViewCell: UITableViewCell {
         // Initialization code
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+    func setData(_ data: Transaction) {
+        titleLabel.text = String(data.sourceAccount.nicName)
+        descriptionLabel.text = String(data.sourceAccount.accountType) + " (" + String(data.sourceAccount.accountNo) + ")"
+        dataLabel.text = String(data.amount)
     }
     
     func setVisibleDataLabel(_ isVisible: Bool) {
         dataLabel.isHidden = !isVisible
-        constraintDescriptionLable.constant = isVisible ? 48 : 20
+        constraintDescriptionLable.constant = isVisible ? 24 : 16
     }
     
 }

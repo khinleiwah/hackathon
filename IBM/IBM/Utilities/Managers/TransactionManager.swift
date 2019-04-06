@@ -17,33 +17,37 @@ class TransactionManager: NSObject {
 
     // calulate the transaction
     func calculateTransaction(sourceAccount:Account,desticationAccount:Account,Amount:Double) -> Transaction {
-        
+        let datesource = DataSource()
+        let currencies = datesource.getCurencyExchangeRate()
+        let forignCurencies = currencies.filter {
+            $0.countryId == desticationAccount.countryId
+        }
+        var receivingCurency = Currency()
+        if(forignCurencies.count > 0){
+            receivingCurency = forignCurencies[0]
+        }else{
+            // this part to handle later
+            receivingCurency.rate = 1
+            receivingCurency.currency = "SGD"
+        }
         let sourceAccountCountryId = sourceAccount.countryId;
         let desticationAccountCountryId = desticationAccount.countryId;
         
         if (sourceAccountCountryId == desticationAccountCountryId || desticationAccount.isIBankRemitanceAvailable) {
-            let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: Amount,date:Date(),fee:0, recevingCurency: "");
+
+            let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: Amount,date:Date(),fee:0, recevingCurency: receivingCurency.currency,transactionRate:receivingCurency.rate);
+
             return transaction;
         }else{
-            let datesource = DataSource()
-            let currencies = datesource.getCurencyExchangeRate()
-            let forignCurencies = currencies.filter {
-                $0.countryId == desticationAccount.countryId
-            }
-            var receivingCurency = Currency()
-            if(forignCurencies.count > 0){
-               receivingCurency = forignCurencies[0]
-            }else{
-                // this part to handle later
-                receivingCurency.rate = 1
-                receivingCurency.currency = "SGD"
-            }
+           
             
             let recieveAmount = Amount * receivingCurency.rate
             
             let fee = recieveAmount*0.01
             
-            let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: recieveAmount,date:Date(),fee:fee, recevingCurency: "");
+
+            let transaction = Transaction(sourceAccount: sourceAccount, destinationAccount: desticationAccount, amount: Amount, receiveAmount: recieveAmount,date:Date(),fee:fee, recevingCurency: receivingCurency.currency,transactionRate:receivingCurency.rate);
+
             return transaction;
         }
         
@@ -59,4 +63,6 @@ class TransactionManager: NSObject {
             return (true,"Proceed")
        }
     }
+    
+   
 }

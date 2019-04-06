@@ -23,8 +23,7 @@ class SearchResultsVC: UIViewController {
     }
 }
 
-extension SearchResultsVC: UITableViewDataSource, UITableViewDelegate {
-    
+extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -34,15 +33,21 @@ extension SearchResultsVC: UITableViewDataSource, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader")
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "SearchHeader") as! SearchHeader
+        header.tilte.text = "Date 06 April 2019"
         return header
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath)
+        let displayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath) as! DisplayTableViewCell
+        return displayTableViewCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
