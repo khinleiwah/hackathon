@@ -1,5 +1,5 @@
 //
-//  SearchResultsVC.swift
+//  SelectVC.swift
 //  IBM
 //
 //  Created by Liu Fan Wei on 6/4/19.
@@ -8,22 +8,27 @@
 
 import UIKit
 
-class SearchResultsVC: UIViewController {
+class SelectVC: UIViewController {
 
-    @IBOutlet weak var tableView: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(UINib.init(nibName: "DisplayTableViewCell", bundle: nil), forCellReuseIdentifier: "DisplayTableViewCell")
-        tableView.register(UINib.init(nibName: "SearchHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "SearchHeader")
+
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func onGoHomeClicked(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
-}
 
-extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
+    /*
+    // MARK: - Navigation
+
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destination.
+        // Pass the selected object to the new view controller.
+    }
+    */
+
+}
+extension SelectVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -40,7 +45,7 @@ extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.row == 0 {
             return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
