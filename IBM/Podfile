@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'IBM' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for IBM
+  pod 'Alamofire'
+  pod 'AlamofireObjectMapper'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SwiftyAttributes'
+  
+target 'IBMTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'IBMUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
