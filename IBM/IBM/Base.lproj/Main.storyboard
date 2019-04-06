@@ -443,10 +443,10 @@
             </objects>
             <point key="canvasLocation" x="3441" y="-63"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Transaction Complete TableVC-->
         <scene sceneID="uPN-tT-ckH">
             <objects>
-                <tableViewController id="92r-FP-HTw" sceneMemberID="viewController">
+                <tableViewController id="92r-FP-HTw" customClass="TransactionCompleteTableVC" customModule="IBM" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="EfE-3p-zgr">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -559,6 +559,9 @@
                                             <rect key="frame" x="42" y="22" width="287" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="MAKE ANOTHER TRANSFER"/>
+                                            <connections>
+                                                <action selector="makeAnotherTransaction:" destination="92r-FP-HTw" eventType="touchUpInside" id="kwv-jm-xh0"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -574,6 +577,9 @@
                                             <rect key="frame" x="42" y="22" width="287" height="30"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="GO TO HOME"/>
+                                            <connections>
+                                                <action selector="gohome:" destination="92r-FP-HTw" eventType="touchUpInside" id="kcB-qe-Pq0"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                 </tableViewCellContentView>
@@ -725,6 +731,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Vzf-d9-ZaY"/>
+        <segue reference="JEj-ix-VV9"/>
     </inferredMetricsTieBreakers>
 </document>

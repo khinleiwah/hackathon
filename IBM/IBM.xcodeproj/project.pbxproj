@@ -37,8 +37,8 @@
 		59A8A5F8225887CB0032A7DB /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F5225887CB0032A7DB /* TransactionManager.swift */; };
 		59A8A5F9225887CB0032A7DB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F6225887CB0032A7DB /* UserManager.swift */; };
 		59A8A5FA225887CB0032A7DB /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F7225887CB0032A7DB /* DataSource.swift */; };
-		59A8A5FC225890150032A7DB /* TransactionCompletedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5FB225890150032A7DB /* TransactionCompletedVC.swift */; };
 		59A8A5FE225890980032A7DB /* IBLargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5FD225890980032A7DB /* IBLargeButton.swift */; };
+		59A8A60222589CC30032A7DB /* TransactionCompleteTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A60122589CC30032A7DB /* TransactionCompleteTableVC.swift */; };
 		6FB221F622589F13000E298C /* SelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB221F522589F13000E298C /* SelectVC.swift */; };
 		6FB52C9822584A880059BB30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9722584A880059BB30 /* UIView.swift */; };
 		6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9B225867030059BB30 /* WelcomeVC.swift */; };
@@ -109,8 +109,8 @@
 		59A8A5F5225887CB0032A7DB /* TransactionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionManager.swift; sourceTree = "<group>"; };
 		59A8A5F6225887CB0032A7DB /* UserManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		59A8A5F7225887CB0032A7DB /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
-		59A8A5FB225890150032A7DB /* TransactionCompletedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCompletedVC.swift; sourceTree = "<group>"; };
 		59A8A5FD225890980032A7DB /* IBLargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IBLargeButton.swift; sourceTree = "<group>"; };
+		59A8A60122589CC30032A7DB /* TransactionCompleteTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionCompleteTableVC.swift; sourceTree = "<group>"; };
 		5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60060B64AD7D8925C49BAF96 /* Pods_IBMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FB221F522589F13000E298C /* SelectVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectVC.swift; sourceTree = "<group>"; };
@@ -258,7 +258,7 @@
 				23F01A22225870D400D8307F /* InputVC.swift */,
 				23F01A2A22587B6100D8307F /* ReviewVC.swift */,
 				6FB52CA7225875D80059BB30 /* SearchResultsVC.swift */,
-				59A8A5FB225890150032A7DB /* TransactionCompletedVC.swift */,
+				59A8A60122589CC30032A7DB /* TransactionCompleteTableVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -563,10 +563,10 @@
 				59A8A5FE225890980032A7DB /* IBLargeButton.swift in Sources */,
 				6FB221F622589F13000E298C /* SelectVC.swift in Sources */,
 				23D90BA522573B7A00A399FD /* APIManager.swift in Sources */,
+				59A8A60222589CC30032A7DB /* TransactionCompleteTableVC.swift in Sources */,
 				6FB52CA8225875D80059BB30 /* SearchResultsVC.swift in Sources */,
 				6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */,
 				23D90BA722573BF400A399FD /* ObjectMapping.swift in Sources */,
-				59A8A5FC225890150032A7DB /* TransactionCompletedVC.swift in Sources */,
 				59A8A5F3225887A20032A7DB /* Account.swift in Sources */,
 				59A8A5FA225887CB0032A7DB /* DataSource.swift in Sources */,
 				23D90B7122572EC600A399FD /* IBM.xcdatamodeld in Sources */,
