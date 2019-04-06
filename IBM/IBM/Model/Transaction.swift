@@ -18,8 +18,9 @@ class Transaction: NSObject {
     var date : Date = Date()
     var fee : Double = 0
     var recevingCurency: String = ""
+    var transactionRate: Double = 1
     
-    init(sourceAccount: Account,destinationAccount:Account,amount:Double,receiveAmount:Double,date:Date,fee:Double,recevingCurency:String) {
+    init(sourceAccount: Account,destinationAccount:Account,amount:Double,receiveAmount:Double,date:Date,fee:Double,recevingCurency:String,transactionRate:Double) {
         self.sourceAccount = sourceAccount;
         self.destinationAccount = destinationAccount;
         self.amount = amount ;
