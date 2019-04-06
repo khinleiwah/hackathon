@@ -27,6 +27,7 @@
 		6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9B225867030059BB30 /* WelcomeVC.swift */; };
 		6FB52C9E225867250059BB30 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9D225867240059BB30 /* LoginVC.swift */; };
 		6FB52CA0225868860059BB30 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9F225868860059BB30 /* DataManager.swift */; };
+		6FB52CA222586CDB0059BB30 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52CA122586CDB0059BB30 /* HistoryVC.swift */; };
 		F4A3A9EDF12EF2D249CA2574 /* Pods_IBM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,6 +78,7 @@
 		6FB52C9B225867030059BB30 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		6FB52C9D225867240059BB30 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		6FB52C9F225868860059BB30 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		6FB52CA122586CDB0059BB30 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 		91870C1D518C72405BCE81AA /* Pods-IBMUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMUITests.release.xcconfig"; path = "Target Support Files/Pods-IBMUITests/Pods-IBMUITests.release.xcconfig"; sourceTree = "<group>"; };
 		D670590AA9E36F4D99931345 /* Pods-IBMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMUITests.debug.xcconfig"; path = "Target Support Files/Pods-IBMUITests/Pods-IBMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DBA824B9CF8D88912512C592 /* Pods-IBM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBM.release.xcconfig"; path = "Target Support Files/Pods-IBM/Pods-IBM.release.xcconfig"; sourceTree = "<group>"; };
@@ -194,6 +196,7 @@
 				6FB52C9D225867240059BB30 /* LoginVC.swift */,
 				23F01A1322584E8D00D8307F /* TransferTableViewController.swift */,
 				6FB52C9B225867030059BB30 /* WelcomeVC.swift */,
+				6FB52CA122586CDB0059BB30 /* HistoryVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				6FB52CA0225868860059BB30 /* DataManager.swift in Sources */,
 				23D90B6B22572EC600A399FD /* ViewController.swift in Sources */,
 				23F01A172258669200D8307F /* DisplayTableViewCell.swift in Sources */,
+				6FB52CA222586CDB0059BB30 /* HistoryVC.swift in Sources */,
 				23D90B6922572EC300A399FD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

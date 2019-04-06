@@ -20,7 +20,7 @@ class APIManager {
     
     func baseCall(data: Any?, apiCallSuccess: APICallSuccess?, apiCallFail: APICallFail? ) {
         HUD.show(.progress)
-        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
             HUD.flash(.success, delay: 1.0)
             apiCallSuccess?("Success")
         }
