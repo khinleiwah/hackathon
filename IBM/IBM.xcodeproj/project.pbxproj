@@ -22,6 +22,8 @@
 		23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A1322584E8D00D8307F /* TransferTableViewController.swift */; };
 		23F01A172258669200D8307F /* DisplayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A152258669200D8307F /* DisplayTableViewCell.swift */; };
 		23F01A182258669200D8307F /* DisplayTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F01A162258669200D8307F /* DisplayTableViewCell.xib */; };
+		23F01A1B22586B9000D8307F /* HeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23F01A1922586B9000D8307F /* HeaderTableViewCell.swift */; };
+		23F01A1C22586B9000D8307F /* HeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23F01A1A22586B9000D8307F /* HeaderTableViewCell.xib */; };
 		24DB72C8AD818C968E0C1074 /* Pods_IBMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B8F57BCE5B5D054FB17F781 /* Pods_IBMTests.framework */; };
 		6FB52C9822584A880059BB30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9722584A880059BB30 /* UIView.swift */; };
 		6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9B225867030059BB30 /* WelcomeVC.swift */; };
@@ -71,6 +73,8 @@
 		23F01A1322584E8D00D8307F /* TransferTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferTableViewController.swift; sourceTree = "<group>"; };
 		23F01A152258669200D8307F /* DisplayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplayTableViewCell.swift; sourceTree = "<group>"; };
 		23F01A162258669200D8307F /* DisplayTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DisplayTableViewCell.xib; sourceTree = "<group>"; };
+		23F01A1922586B9000D8307F /* HeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTableViewCell.swift; sourceTree = "<group>"; };
+		23F01A1A22586B9000D8307F /* HeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderTableViewCell.xib; sourceTree = "<group>"; };
 		3CCDE1ABCE406D34B1A03DA4 /* Pods-IBMTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IBMTests.release.xcconfig"; path = "Target Support Files/Pods-IBMTests/Pods-IBMTests.release.xcconfig"; sourceTree = "<group>"; };
 		5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60060B64AD7D8925C49BAF96 /* Pods_IBMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +190,8 @@
 			children = (
 				23F01A152258669200D8307F /* DisplayTableViewCell.swift */,
 				23F01A162258669200D8307F /* DisplayTableViewCell.xib */,
+				23F01A1922586B9000D8307F /* HeaderTableViewCell.swift */,
+				23F01A1A22586B9000D8307F /* HeaderTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,6 +366,7 @@
 				23D90B7622572ECC00A399FD /* LaunchScreen.storyboard in Resources */,
 				23D90B7322572ECC00A399FD /* Assets.xcassets in Resources */,
 				23F01A182258669200D8307F /* DisplayTableViewCell.xib in Resources */,
+				23F01A1C22586B9000D8307F /* HeaderTableViewCell.xib in Resources */,
 				23D90B6E22572EC600A399FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -493,6 +500,7 @@
 				6FB52C9E225867250059BB30 /* LoginVC.swift in Sources */,
 				23F01A1422584E8D00D8307F /* TransferTableViewController.swift in Sources */,
 				6FB52C9822584A880059BB30 /* UIView.swift in Sources */,
+				23F01A1B22586B9000D8307F /* HeaderTableViewCell.swift in Sources */,
 				23D90B9D225734BF00A399FD /* Constants.swift in Sources */,
 				6FB52CA0225868860059BB30 /* DataManager.swift in Sources */,
 				23D90B6B22572EC600A399FD /* ViewController.swift in Sources */,
