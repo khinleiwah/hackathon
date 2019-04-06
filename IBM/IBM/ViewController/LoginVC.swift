@@ -23,7 +23,7 @@ class LoginVC: UIViewController {
             let name = name?.trimmingCharacters(in: .whitespacesAndNewlines),
             pin.count != 0,
             name.count != 0 else {
-                HUD.flash(.label("Email and Pin can not be empty"))
+                HUD.flash(.label("Email and Pin can not be empty"), delay: 1.0)
                 return
         }
         APIManager.shared.login(name, pin, apiCallSuccess: { [weak self] data in
