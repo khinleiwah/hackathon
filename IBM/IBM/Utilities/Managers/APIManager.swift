@@ -9,10 +9,26 @@
 import Foundation
 import Alamofire
 import AlamofireObjectMapper
+import PKHUD
+
+typealias APICallSuccess = (_ data: Any) -> Void
+typealias APICallFail = (_ error: Error) -> Void
 
 class APIManager {
+    
     static let shared = APIManager.init()
     
+    func baseCall(data: Any?, apiCallSuccess: APICallSuccess?, apiCallFail: APICallFail? ) {
+        HUD.show(.progress)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            HUD.flash(.success, delay: 1.0)
+            apiCallSuccess?("Success")
+        }
+    }
+    
+    func login(_ name: String ,_ pin: String, apiCallSuccess: APICallSuccess?=nil, apiCallFail: APICallFail?=nil ) {
+        baseCall(data: nil, apiCallSuccess: apiCallSuccess, apiCallFail: apiCallFail)
+    }
 //    func getMonkListByPageIndex(index:Int,completionHandler:@escaping completionResultBlock){
 //        Alamofire.request(String(format:Constants.URL.getMonksListURL,"\(index)"), method: .post, encoding: URLEncoding.default).responseArray { (response: DataResponse<[ResponseObject]>) in
 //            if let result = response.result.value {
