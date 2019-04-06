@@ -23,8 +23,7 @@ class SearchResultsVC: UIViewController {
     }
 }
 
-extension SearchResultsVC: UITableViewDataSource, UITableViewDelegate {
-    
+extension SearchResultsVC: UITableViewDelegate, UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
@@ -41,8 +40,23 @@ extension SearchResultsVC: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath)
+        if indexPath.row == 0 {
+            return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
+        }else if indexPath.row == 1 {
+            let filterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as! FilterTableViewCell
+            filterTableViewCell.selectType(type: currentType)
+            filterTableViewCell.filterChangedCallBack = { [weak self] type in
+                self?.currentType = type
+                self?.tableView.reloadData()
+            }
+            return filterTableViewCell
+        }
+        return UITableViewCell()
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }

@@ -26,16 +26,16 @@ class DataSource: NSObject {
     
     func getTrasactionHistory() -> [Transaction] {
         let acounts = getAccounts()
-        let trn1 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 2334.566, receiveAmount: 1223.55, date: Date(), fee: 0.00, recevingCurency: "")
-        let trn2 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 234.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn3 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 5334.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn4 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 4434.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn5 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-       let trn6 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn7 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn8 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn9 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
-        let trn10 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "")
+        let trn1 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 2334.566, receiveAmount: 1223.55, date: Date(), fee: 0.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn2 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 234.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn3 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 5334.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn4 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 4434.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn5 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn6 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn7 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn8 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn9 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
+        let trn10 = Transaction(sourceAccount: acounts[0], destinationAccount: acounts[1], amount: 634.566, receiveAmount: 1223.55, date: Date(), fee: 11.00, recevingCurency: "", transactionRate: 1554539080)
         return [trn1,trn2,trn4,trn3,trn5, trn6, trn7, trn8, trn9, trn10,]
     }
     

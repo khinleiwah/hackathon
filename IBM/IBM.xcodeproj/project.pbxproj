@@ -37,6 +37,7 @@
 		59A8A5F8225887CB0032A7DB /* TransactionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F5225887CB0032A7DB /* TransactionManager.swift */; };
 		59A8A5F9225887CB0032A7DB /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F6225887CB0032A7DB /* UserManager.swift */; };
 		59A8A5FA225887CB0032A7DB /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59A8A5F7225887CB0032A7DB /* DataSource.swift */; };
+		6FB221F422589D60000E298C /* SelectVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB221F322589D60000E298C /* SelectVC.swift */; };
 		6FB52C9822584A880059BB30 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9722584A880059BB30 /* UIView.swift */; };
 		6FB52C9C225867030059BB30 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9B225867030059BB30 /* WelcomeVC.swift */; };
 		6FB52C9E225867250059BB30 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FB52C9D225867240059BB30 /* LoginVC.swift */; };
@@ -108,6 +109,7 @@
 		59A8A5F7225887CB0032A7DB /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		5AE71414BBC378F4D7DC206F /* Pods_IBM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		60060B64AD7D8925C49BAF96 /* Pods_IBMUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IBMUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6FB221F322589D60000E298C /* SelectVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectVC.swift; sourceTree = "<group>"; };
 		6FB52C9722584A880059BB30 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		6FB52C9B225867030059BB30 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		6FB52C9D225867240059BB30 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -233,10 +235,8 @@
 				23F01A1A22586B9000D8307F /* HeaderTableViewCell.xib */,
 				6FB52CA322586EA80059BB30 /* FilterTableViewCell.swift */,
 				6FB52CA422586EA80059BB30 /* FilterTableViewCell.xib */,
-
 				23F01A24225878F300D8307F /* InputTableViewCell.swift */,
 				23F01A25225878F300D8307F /* InputTableViewCell.xib */,
-
 				6FB52CB12258843F0059BB30 /* SearchHeader.swift */,
 				6FB52CB52258874E0059BB30 /* SearchHeader.xib */,
 			);
@@ -250,12 +250,10 @@
 				23F01A1322584E8D00D8307F /* TransferTableViewController.swift */,
 				6FB52C9B225867030059BB30 /* WelcomeVC.swift */,
 				6FB52CA122586CDB0059BB30 /* HistoryVC.swift */,
-
 				23F01A22225870D400D8307F /* InputVC.swift */,
 				23F01A2A22587B6100D8307F /* ReviewVC.swift */,
-
 				6FB52CA7225875D80059BB30 /* SearchResultsVC.swift */,
-
+				6FB221F322589D60000E298C /* SelectVC.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -583,6 +581,7 @@
 				6FB52CA222586CDB0059BB30 /* HistoryVC.swift in Sources */,
 				23F01A26225878F300D8307F /* InputTableViewCell.swift in Sources */,
 				23D90B6922572EC300A399FD /* AppDelegate.swift in Sources */,
+				6FB221F422589D60000E298C /* SelectVC.swift in Sources */,
 				59A8A5F2225887A20032A7DB /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

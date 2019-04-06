@@ -17,18 +17,18 @@ class HistoryVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        tableView.register(UINib.init(nibName: "DisplayTableViewCell", bundle: nil), forCellReuseIdentifier: "DisplayTableViewCell")
+    
         tableView.register(UINib.init(nibName: "HeaderTableViewCell", bundle: nil), forCellReuseIdentifier: "HeaderTableViewCell")
         tableView.register(UINib.init(nibName: "FilterTableViewCell", bundle: nil), forCellReuseIdentifier: "FilterTableViewCell")
         tableView.rowHeight = UITableView.automaticDimension
+        tableView.tableHeaderView = UIView()
+        tableView.tableFooterView = UIView()
     }
-    
 }
 
 extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count + 2
+        return 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,12 +42,8 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
                 self?.tableView.reloadData()
             }
             return filterTableViewCell
-        }else {
-            let displayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath) as! DisplayTableViewCell
-            displayTableViewCell.setData(data[indexPath.row-2])
-            displayTableViewCell.setVisibleDataLabel(true)
-            return displayTableViewCell
         }
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
