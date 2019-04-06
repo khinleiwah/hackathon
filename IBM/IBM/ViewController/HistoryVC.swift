@@ -48,5 +48,6 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        performSegue(withIdentifier: "selectAccount", sender: nil);
     }
 }
