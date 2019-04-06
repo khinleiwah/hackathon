@@ -30,22 +30,18 @@ class LoginVC: UIViewController {
             self?.performSegue(withIdentifier: "goMainPage", sender: nil)
         })
     }
-    
-    
-    // MARK: - Navigation
-    //In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
-    }
-    
 }
 
 extension LoginVC: UITextFieldDelegate{
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if textField.tag == 1 {
-            email = textField.text;
-        }else if textField.tag == 2 {
-            pin = textField.text
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if let text = textField.text,let textRange = Range(range, in: text) {
+            let updatedText = text.replacingCharacters(in: textRange,with: string)
+            if textField.tag == 1 {
+                email = updatedText
+            }else if textField.tag == 2 {
+                pin = updatedText
+            }
         }
+        return true
     }
 }
