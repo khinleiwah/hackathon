@@ -9,8 +9,10 @@
 import UIKit
 
 class HistoryVC: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    
+    private var currentType = FilterType.week
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +34,19 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
         if indexPath.row == 0 {
             return tableView.dequeueReusableCell(withIdentifier: "HeaderTableViewCell", for: indexPath)
         }else if indexPath.row == 1 {
-            return tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath)
+            let filterTableViewCell = tableView.dequeueReusableCell(withIdentifier: "FilterTableViewCell", for: indexPath) as! FilterTableViewCell
+            filterTableViewCell.selectType(type: currentType)
+            filterTableViewCell.filterChangedCallBack = { [weak self] type in
+                self?.currentType = type
+                self?.tableView.reloadData()
+            }
+            return filterTableViewCell
         }else {
             return tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath)
         }
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        tableView.deselectRow(at: indexPath, animated: false)
     }
 }
