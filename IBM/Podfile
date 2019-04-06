@@ -12,6 +12,7 @@ target 'IBM' do
   pod 'AlamofireObjectMapper'
   pod 'IQKeyboardManagerSwift'
   pod 'SwiftyAttributes'
+  pod 'PKHUD', '~> 5.0'
   
 target 'IBMTests' do
     inherit! :search_paths
