@@ -13,6 +13,7 @@ class HistoryVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     private var currentType = FilterType.week
+    private var data = DataSource.shared.getTrasactionHistory()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +28,7 @@ class HistoryVC: UIViewController {
 
 extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 + 2
+        return data.count + 2
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -42,7 +43,10 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource{
             }
             return filterTableViewCell
         }else {
-            return tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath)
+            let displayTableViewCell = tableView.dequeueReusableCell(withIdentifier: "DisplayTableViewCell", for: indexPath) as! DisplayTableViewCell
+            displayTableViewCell.setData(data[indexPath.row-2])
+            displayTableViewCell.setVisibleDataLabel(true)
+            return displayTableViewCell
         }
     }
     
