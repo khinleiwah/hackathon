@@ -19,7 +19,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="62.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saj-FM-TLx">
+                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saj-FM-TLx">
                         <rect key="frame" x="220" y="8" width="80" height="42"/>
                         <color key="backgroundColor" red="0.27487361430000001" green="0.55136829610000004" blue="0.80002993349999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
@@ -33,10 +33,13 @@
                                 <real key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onTypeChanged:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YgR-gR-UzE"/>
+                        </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWb-om-hY7">
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xWb-om-hY7">
                         <rect key="frame" x="20" y="8" width="80" height="42"/>
-                        <color key="backgroundColor" red="0.27487361430000001" green="0.55136829610000004" blue="0.80002993349999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.27450980392156865" green="0.55294117647058827" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <inset key="contentEdgeInsets" minX="14" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <state key="normal" title="1 WEEK">
                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,8 +49,11 @@
                                 <real key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onTypeChanged:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="JJP-7f-Zv0"/>
+                        </connections>
                     </button>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkh-Nj-w2o">
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkh-Nj-w2o">
                         <rect key="frame" x="120" y="8" width="80" height="42"/>
                         <color key="backgroundColor" red="0.27487361430000001" green="0.55136829610000004" blue="0.80002993349999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <state key="normal" title="1 MONTH">
@@ -58,6 +64,9 @@
                                 <real key="value" value="6"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onTypeChanged:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="C2d-Vj-wnB"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -76,6 +85,11 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outletCollection property="filterButtons" destination="xWb-om-hY7" collectionClass="NSMutableArray" id="Lt8-M8-SvM"/>
+                <outletCollection property="filterButtons" destination="Bkh-Nj-w2o" collectionClass="NSMutableArray" id="Ng0-nE-Ck7"/>
+                <outletCollection property="filterButtons" destination="saj-FM-TLx" collectionClass="NSMutableArray" id="MqF-Iz-qf4"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="134.26339285714286"/>
         </tableViewCell>
     </objects>

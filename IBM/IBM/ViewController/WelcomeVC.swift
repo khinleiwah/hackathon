@@ -14,6 +14,6 @@ class WelcomeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        labelTitle.text = "Welcome " + DataManager.shared.name
+        labelTitle.text = "Welcome " + DataSource.shared.name
     }
 }

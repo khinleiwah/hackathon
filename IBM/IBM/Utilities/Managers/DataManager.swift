@@ -11,8 +11,5 @@ import Foundation
 
 class DataManager {
     
-    static let shared = DataManager.init()
-    
-    var name = ""
-    var pin = ""
+
 }
